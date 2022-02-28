@@ -76,14 +76,14 @@ int main() {
     int arr[5] = [0, 2, 4, 6, 8];
     var element = array[5];
 
-    match enum_example {
-        .Potato {
+    switch enum_example {
+        Potato {
             print("Potato");
         }
-        .Hamud {
+        Hamud {
             print("Hamud");
         }
-        _ => {
+        default {
             print("Other enum value");
         }
     }
@@ -96,11 +96,6 @@ int main() {
     }
 
     print("The value is: {}", value);
-
-    // Iterator loop
-    loop i in 0 to 10 {
-
-    } 
 
     // While loop
     loop value < 10 {
